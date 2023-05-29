@@ -25,4 +25,8 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-//Bobby h‰r
+
+//Jimmie testar
+
+//Bobby h√§r
+
