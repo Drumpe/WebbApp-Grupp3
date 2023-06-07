@@ -193,8 +193,9 @@ namespace JensensWebApp.Controllers
                     articles = articles.OrderBy(a => a.Published).ToList();
                     break;
             }
-
-            return View(articles);
+            //Max 5 artiklar för att enklare hantering under Layout-testningen
+            //orginal: return View(articles);
+            return View(articles.Take(5).ToList());
         }
 
         public IActionResult Privacy()
