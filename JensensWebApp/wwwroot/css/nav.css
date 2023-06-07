@@ -1,0 +1,39 @@
+/* Här är navbars css -Manuel*/
+.navbar {
+    background-color: #2cb67d;
+    width: 100%;
+    border-bottom: 2em;
+}
+
+
+
+.nav-link {
+    color: #2b2c34;
+    position: relative;
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.nav-link:after {
+    content: "";
+    border: none;
+    display: none;
+    position: absolute;
+    font-weight: 600;
+    padding: 0 5px;
+    height: 0.1em;
+    background-color: #ff8906;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-link:hover {
+    color: #ff8906;
+    font-weight: 900;
+}
+
+.nav-link:hover:after {
+    display: block;
+    width: 100%;
+}
+  
