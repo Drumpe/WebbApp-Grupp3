@@ -13,11 +13,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-  margin-top: 4.5rem;
-}
-
 header {
     margin-bottom: 20px;
 }
@@ -25,7 +20,6 @@ header {
 .navbar-nav {
     border-color: transparent;
     overflow: hidden;
-    background-color: #8E8880;
     top: 0;
 }
 
@@ -41,16 +35,17 @@ header {
 .navbar ul li :hover {
     background-color: #d2cdcd;
     color: black;
+    border-bottom: solid 2px black;
 }
 
 .navbar-brand img {
     width: 100%;
+    
 }
 
 .navbar-brand {
     width: 30%;
 }
-
 .navbar-nav .nav-link {
     color: #343a40;
     font-weight: bold;
@@ -62,7 +57,6 @@ header {
     }
 
 .container {
-    background-color: #8e8880;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -71,6 +65,7 @@ header {
     padding: 0 2rem;
     z-index: 1;
     box-shadow: 0px 0px 6px rgba(0,0,0,0.9);
+    
 }
 
 @media (max-width: 500px) {
