@@ -14,3 +14,14 @@
         background-position: right;
     }
 }
+.box-weather{
+    display: flex;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    width: 80%;
+    height: 200px;
+    background-color: var(--gradient);
+    border: 2px solid #000; 
+}
+
+
