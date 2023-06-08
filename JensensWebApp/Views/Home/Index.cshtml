@@ -17,24 +17,18 @@
 
 }
 
-
-
 <div class="container-fluid">
     
     <div class="row">
-        <div class="col-sm-3 gradient-bg">
+        <div class="col-sm-3">
             <h1 class="d-flex justify-content-center text-center ">Väder</h1>
-            <div class="box-weather">
+            <div class="box-weather card">
                 <div class="text-center">
                     <p class="text-center">Temperatur: 25</p>
-                    
                 </div>
-                
-                
             </div>
         </div>
-        <div class="col-sm-6" style="background-color: #570861;">
-            <h1 class="text-center">Artiklar</h1>
+        <div class="col-sm-6">
         @foreach (var article in Model)
         {
             <div class="mb-4">
@@ -49,12 +43,8 @@
             </div>
         }
         </div>
-        <div class="col-sm-3 gradient-bg">
+        <div class="col-sm-3">
            
         </div>
-    </div>
-    
-    
-    
-    
+    </div> 
 </div>
