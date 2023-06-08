@@ -10,11 +10,6 @@ a {
         color: #93cdcb;
     }
 
-/* Temporär fix för att artiklar inte skall gömmas under navbar*/
-.mainclass {
-    padding-top: 90px;
-}
-
 .navbar-nav {
     text-align: left;
     font-family: 'Batang'
