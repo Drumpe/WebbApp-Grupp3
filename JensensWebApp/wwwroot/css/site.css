@@ -1,21 +1,20 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+}
+/*Länkar*/
+a {
+    color: #343a40;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
+    a:hover, a:active {
+        color: #93cdcb;
+    }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Temporär fix för att artiklar inte skall gömmas under navbar*/
 .mainclass {
     padding-top: 90px;
 }
+
 .navbar-nav {
     text-align: left;
     font-family: 'Batang'
@@ -36,28 +35,29 @@ html {
     color: #343a40;
     font-weight: bold;
 }
- .navbar-nav .nav-link:hover,
- .navbar-nav .nav-link:focus {
-        color: #007bff;
 
- }
+.nav-link:hover,
+.nav-link:focus {
+    color: #007bff;
+}
 
 .navcontainer {
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    width: 100%;
     height: 100%;
     top: 20px;
     padding: 0 2rem;
 }
 
 @media (max-width: 500px) {
-    .container {
+    .navcontainer {
         flex-direction: column;
         justify-content: center;
     }
 }
 
+/* Skugga på korten */
 .card {
     box-shadow: 0px -5px 10px #999;
 }
@@ -70,27 +70,23 @@ html {
     z-index: 999;
     padding: 0;
     margin: 0;
-    background-color:white;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-item {
-   
     padding: 0.5rem 1rem;
     clear: both;
     font-weight: 400;
-    color:black;
+    color: black;
     text-decoration: none;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
- .dropdown-item:hover {
-  background-color:ghostwhite;
-     
-
- }
+    .dropdown-item:hover {
+        background-color: ghostwhite;
+    }
 
 .dropdown:hover .dropdown-menu {
-    display:block;
+    display: block;
 }
-
