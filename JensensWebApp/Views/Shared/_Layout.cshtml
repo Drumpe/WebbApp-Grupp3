@@ -78,23 +78,25 @@
             @RenderBody()
         </main>
     </div>
- 
-    <footer class="border-top footer text-muted">
-        <div>
-            &copy; 2023 - JensensWebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
 
-            <div class="primary-footer">
-                <dl>
-                    <dt><a href="#">Hälsa</a></dt>
-                    <dt><a href="#">Samhälle & Konflikter</a></dt>
-                    <dt><a href="#">Miljö</a></dt>
-                    <dt><a href="#">Vetenskap & Teknik</a></dt>
-                    <dt><a href="#">Livsstil & Fritid</a></dt>
-                    <dt><a href="#">Ekonomi</a></dt>
-                    <dt><a href="#">Religion</a></dt>
-                    <dt><a href="#">Idrott</a></dt>
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div>
+            <!--&copy; 2023 - JensensWebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>-->
+
+            <div class="align-top ">
+
+                <dl class="row m-0">
+                    <dt class="list-group-item col"><a href="#">Hälsa</a></dt>
+                    <dt class="list-group-item col"><a href="#">Samhälle & Konflikter</a></dt>
+                    <dt class="list-group-item col"><a href="#">Miljö</a></dt>
+                    <dt class="list-group-item col"><a href="#">Vetenskap & Teknik</a></dt>
+                    <dt class="list-group-item col"><a href="#">Livsstil & Fritid</a></dt>
+                    <dt class="list-group-item col"><a href="#">Ekonomi</a></dt>
+                    <dt class="list-group-item col"><a href="#">Religion</a></dt>
+                    <dt class="list-group-item col"><a href="#">Idrott</a></dt>
 
                 </dl>
+
             </div>
             <div class="secondary-footer">
                 <div class="signup"><p>Come on! Sign up for some more mjau-content</p> <button>CLICK ME</button></div>
@@ -132,7 +134,7 @@
                 </div>
             </div>
             <p>&#169; 2023 Grupp3 WebbNews Mjaumjau. All rights reserved.</p>
-            
+
         </div>
 
     </footer>
@@ -142,3 +144,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
