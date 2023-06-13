@@ -25,3 +25,16 @@ function cardClick() {
     }
     open(href, "_self"); //Öppnas i samma fönster (_blank i annat fall)
 }
+
+
+// BUtton för signup i footern
+
+function clickSignUp() {
+    var signUpBtn = document.getElementById("signupButton");
+    signUpBtn.addEventListener('click', () => {
+        window.open('https://localhost:7241', 'popUp', 'height = 300, width = 500, left = 100, top = 100, scrollbars = yes, resizable = yes, menubar = no, toolbar = yes, location = no, directories = no, status = yes')
+
+    });
+
+}
+clickSignUp();
