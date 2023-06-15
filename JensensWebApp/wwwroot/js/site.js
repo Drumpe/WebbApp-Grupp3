@@ -10,6 +10,8 @@ function init() {
     for (var i = 0; i < cardElems.length; i++) {
         cardElems[i].addEventListener('click', cardClick, false);
     }
+initSupportButton();
+initSubmitButton();
 } // End init
 window.addEventListener("load", init); // init aktiveras då sidan är inladdad
 
@@ -26,27 +28,18 @@ function cardClick() {
     open(href, "_self"); //Öppnas i samma fönster (_blank i annat fall)
 }
 
-
-// BUtton för signup i footern
-
-function clickSignUp() {
-    var signUpBtn = document.getElementById("signupButton");
-    signUpBtn.addEventListener('click', () => {
-        window.open('https://localhost:7241', 'popUp', 'height = 300, width = 500, left = 100, top = 100, scrollbars = yes, resizable = yes, menubar = no, toolbar = yes, location = no, directories = no, status = yes')
-
-    });
-
-}
-clickSignUp();
-
-// Funktion för Support knapp
-
-function SupportButton() {
+// Funktioner för Support knapp
+function initSupportButton() {
     var supportButton = document.getElementById("supportbutton");
     supportButton.addEventListener('click', () => {
         var pageUrl = '/SupportUs/support.html';
         window.location.href = pageUrl;
     });
-
 }
-SupportButton()
+function initSubmitButton() {
+    document.getElementById('submitButton').addEventListener('click', function () {
+        var email = document.getElementById('emailInput').value;
+        console.log(email);
+        document.getElementById('thankYouMessage').style.display = 'block';
+    });
+}
