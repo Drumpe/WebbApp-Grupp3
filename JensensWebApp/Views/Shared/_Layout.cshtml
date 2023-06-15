@@ -110,13 +110,12 @@
         <div class="elemento1"></div>
         
         <div class="row secondary-footer">
-            
+
             <div class="signup col">
                 <p class="signup-text">Come on! Sign up for some more mjau-content</p>
                 @*Bootstrap-knappen*@
                 <button id="customPrompt" data-bs-toggle="modal" data-bs-target="#signUp" class="btn-footer bf-1">Sign up for our email</button>
-                @*Javascript knapp in the making*@
-                <button id="signupButton" class="btn-footer bf-1">Sign up for our email</button>
+                
             </div>
             @*Bootstrap knapp för signup*@
             <div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="signUpLabel" aria-hidden="true">
@@ -128,20 +127,30 @@
                         </div>
                         <div class="modal-body">
                             Sign up here for content
+                            
                         </div>
-                        <div class="input-group mb-3">
-                            <div>
-                            <input type="email" class="form-control" placeholder="Sign up with your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            </div>
-                            <button class="btn btn-primary">Sign me UP!</button>
+
+                    
+						<div class="input-group mb-3">
+							<div>&ensp; &ensp;</div>
+							<div>
+
+                                <input id="emailInput" type="email" class="form-control" placeholder="Sign up with your email" aria-label="Recipient's email">
+							</div>
+                            <button id="submitButton" class="btn btn-primary">Sign me UP!</button>
                         </div>
                         <div class="modal-footer">
+                            <div id="thankYouMessage" style="display: none;">Thank you for signing up!</div>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
-            
+            @*Button for modal - saving the email temporary for no reason :)*@
+            <script>
+
+            </script>
+
             <div class="gridfooter col">
 
                 <div class="row">

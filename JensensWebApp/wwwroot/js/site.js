@@ -27,18 +27,6 @@ function cardClick() {
 }
 
 
-// BUtton för signup i footern
-
-function clickSignUp() {
-    var signUpBtn = document.getElementById("signupButton");
-    signUpBtn.addEventListener('click', () => {
-        window.open('https://localhost:7241', 'popUp', 'height = 300, width = 500, left = 100, top = 100, scrollbars = yes, resizable = yes, menubar = no, toolbar = yes, location = no, directories = no, status = yes')
-
-    });
-
-}
-clickSignUp();
-
 // Funktion för Support knapp
 
 function SupportButton() {
@@ -50,3 +38,14 @@ function SupportButton() {
 
 }
 SupportButton()
+
+function SubmitButton() {
+    document.getElementById('submitButton').addEventListener('click', function () {
+        var email = document.getElementById('emailInput').value;
+        console.log(email);
+        document.getElementById('thankYouMessage').style.display = 'block';
+    });
+}
+
+SubmitButton();
+
