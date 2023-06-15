@@ -40,7 +40,17 @@ function clickSignUp() {
 clickSignUp();
 
 
-    // Hämta och visa upp väder
+
+
+
+
+
+
+
+
+
+
+// Hämta och visa upp väder
 
 const weatherInfoElement = document.getElementById('wind');
 const cityElement = document.getElementById('stad');
