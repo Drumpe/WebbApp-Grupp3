@@ -1,7 +1,7 @@
 html {
     font-size: 14px;
 }
-/*Länkar*/
+/*Lï¿½nkar*/
 a {
     color: #343a40;
 }
@@ -52,7 +52,7 @@ a {
     }
 }
 
-/* Skugga på korten */
+/* Skugga pï¿½ korten */
 .card {
     box-shadow: 0px -5px 10px #999;
 }
@@ -109,3 +109,4 @@ a {
         border: outset;
         cursor: pointer;
     }
+    
