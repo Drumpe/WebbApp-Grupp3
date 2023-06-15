@@ -43,3 +43,37 @@ function initSubmitButton() {
         document.getElementById('thankYouMessage').style.display = 'block';
     });
 }
+
+// Här är funktion som gör toggle mellan theme och kontrollerar den nuvarande theme.
+document.addEventListener("DOMContentLoaded", function() { 
+    var icon = document.getElementById("theme-icon");
+    var currentTheme = localStorage.getItem("theme") || "light-theme";
+    console.log(currentTheme);
+
+    if (currentTheme) {
+        document.body.classList.add(currentTheme);
+        if (currentTheme === "dark-theme") {
+                icon.src = "Images/sun-icon.png"
+        } else { 
+                icon.src = "Images/moon-icon.png"
+        }
+        
+    }
+
+    if (icon) {
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) { 
+                currentTheme = "dark-theme";
+                icon.src = "Images/sun-icon.png"
+            } else { 
+                icon.src = "Images/moon-icon.png"
+                currentTheme = "light-theme";
+            }
+
+            localStorage.setItem("theme", currentTheme);
+        };
+    }
+});
+
+
