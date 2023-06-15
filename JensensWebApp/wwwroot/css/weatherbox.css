@@ -62,9 +62,7 @@
     margin-top: -5px;
     
 }
-.SecondDetails .col {
-        flex-basis: 48%; /* Adjust the value as needed to allow space for both columns */
-}
+
 .humidity, .wind{
     width: 100%;
     font-size: 15px;
