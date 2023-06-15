@@ -1,12 +1,12 @@
 footer {
-    background-color: rgb(241, 242, 245);
+    background-color: rgb(247, 247, 247);
 }
 
 .footer-nav-headline  {
     color: rgb(0, 0, 0) !important;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: relative;
 }
 
