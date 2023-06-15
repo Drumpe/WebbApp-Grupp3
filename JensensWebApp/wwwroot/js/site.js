@@ -10,6 +10,8 @@ function init() {
     for (var i = 0; i < cardElems.length; i++) {
         cardElems[i].addEventListener('click', cardClick, false);
     }
+initSupportButton();
+initSubmitButton();
 } // End init
 window.addEventListener("load", init); // init aktiveras då sidan är inladdad
 
@@ -26,26 +28,18 @@ function cardClick() {
     open(href, "_self"); //Öppnas i samma fönster (_blank i annat fall)
 }
 
-
-// Funktion för Support knapp
-
-function SupportButton() {
+// Funktioner för Support knapp
+function initSupportButton() {
     var supportButton = document.getElementById("supportbutton");
     supportButton.addEventListener('click', () => {
         var pageUrl = '/SupportUs/support.html';
         window.location.href = pageUrl;
     });
-
 }
-SupportButton()
-
-function SubmitButton() {
+function initSubmitButton() {
     document.getElementById('submitButton').addEventListener('click', function () {
         var email = document.getElementById('emailInput').value;
         console.log(email);
         document.getElementById('thankYouMessage').style.display = 'block';
     });
 }
-
-SubmitButton();
-
