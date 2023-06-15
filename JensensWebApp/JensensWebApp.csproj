@@ -8,6 +8,15 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\Images\ImgSun.png" />
+    <Content Remove="wwwroot\supportus\support.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\supportus\support.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\supportus\support.js" />
   </ItemGroup>
 
 </Project>
