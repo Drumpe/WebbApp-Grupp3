@@ -38,3 +38,15 @@ function clickSignUp() {
 
 }
 clickSignUp();
+
+// Funktion för Support knapp
+
+function SupportButton() {
+    var supportButton = document.getElementById("supportbutton");
+    supportButton.addEventListener('click', () => {
+        var pageUrl = '/SupportUs/support.html';
+        window.location.href = pageUrl;
+    });
+
+}
+SupportButton()
