@@ -1,0 +1,22 @@
+@model JobApplication
+
+<div class="aplication-form">
+    <form class="aplication-form" asp-action="SubmitJobApplication" method="post" enctype="multipart/form-data">
+        <label for="FullName">Full Name:</label>
+        <input type="text" id="nombre" name="FullName" required>
+        
+        <label for="Email">Email Address:</label>
+        <input type="email" id="email" name="Email" required>
+        
+        <label for="Phone">Phone Number:</label>
+        <input type="tel" id="phone" name="Phone" required>
+        
+        <label for="Experience">Work Experience:</label>
+        <textarea id="XP" name="Experience" rows="5" required></textarea>
+        
+        <label for="CV">Upload CV:</label>
+        <input class="cv-upload" type="file" id="cv" name="cv" required>
+        
+        <input class="ntn-submit" type="submit" value="Send Information">
+    </form>
+</div>

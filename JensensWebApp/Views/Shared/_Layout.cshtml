@@ -6,15 +6,16 @@
     <title>@ViewData["Title"] - JensensWebApp</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/StylingBody.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/weatherbox.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/JensensWebApp.styles.css" asp-append-version="true" />   
     <link rel="stylesheet" href="~/css/footerstyle.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/views.css" asp-append-version="true" />
 
     
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow">
+        <nav class="navbar navbar-expand-lg border-bottom box-shadow">
 
             <div class="container navcontainer">
                 
@@ -29,6 +30,7 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="Home" asp-action="Index">Hem</a>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
@@ -38,17 +40,17 @@
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="?topic=&sortBy=">All</a>
-    <a class="dropdown-item" href="?topic=Halsa&sortBy=">Hälsa</a>
-    <a class="dropdown-item" href="?topic=SamhalleKonflikter&sortBy=">Samhälle och Konflikter</a>
-    <a class="dropdown-item" href="?topic=Miljo&sortBy=">Miljö</a>
-    <a class="dropdown-item" href="?topic=VetenskapTeknik&sortBy=">Vetenskap och Teknik</a>
-    <a class="dropdown-item" href="?topic=LivsstillFritt&sortBy=">Livsstil och Fritid</a>
-    <a class="dropdown-item" href="?topic=Ekonomi&sortBy=">Ekonomi</a>
-    <a class="dropdown-item" href="?topic=Religion&sortBy=">Religion</a>
-    <a class="dropdown-item" href="?topic=Idrott&sortBy=">Idrott</a>
-    </div>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="?topic=&sortBy=">All</a>
+                                <a class="dropdown-item" href="?topic=Halsa&sortBy=">Hälsa</a>
+                                <a class="dropdown-item" href="?topic=SamhalleKonflikter&sortBy=">Samhälle och Konflikter</a>
+                                <a class="dropdown-item" href="?topic=Miljo&sortBy=">Miljö</a>
+                                <a class="dropdown-item" href="?topic=VetenskapTeknik&sortBy=">Vetenskap och Teknik</a>
+                                <a class="dropdown-item" href="?topic=LivsstillFritt&sortBy=">Livsstil och Fritid</a>
+                                <a class="dropdown-item" href="?topic=Ekonomi&sortBy=">Ekonomi</a>
+                                <a class="dropdown-item" href="?topic=Religion&sortBy=">Religion</a>
+                                <a class="dropdown-item" href="?topic=Idrott&sortBy=">Idrott</a>
+                            </div>
 
                         </div>
                     </li>
@@ -80,15 +82,18 @@
                         </li>
                     </ul>
                 </div>
+                
+
+                <div class="img-bg"><img id="theme-icon" src="~/Images/moon-icon.png"></div>
         </nav>
     </header>
-    <div class="mt-lg-3">
+    <div>
         <main role="main" class="mainclass">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="footer text-white">
+    <footer class="footer text-white ">
 
         <!--&copy; 2023 - JensensWebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>-->
 
@@ -169,7 +174,7 @@
                     <div class="footer-box col">
                         <dl class="dl">
                             <dt class="dt-el"><a href="#" class="footer-box-el smaller">Alla teman</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">Jobba hos oss</a></dt>
+                            <dt class="dt-el"><a asp-controller="Employment" asp-action="JobApplication" class="footer-box-el smaller">Jobba hos oss</a></dt>
                             <dt class="dt-el"><a href="#" class="footer-box-el smaller">Journalister</a></dt>
                             <dt class="dt-el"><a href="#" class="footer-box-el smaller">Arkiv</a></dt>
                             
@@ -178,11 +183,11 @@
                     </div>
 
                     <div class="footer-box col">
-                        <dt class="dt-el"><a href="#" class="footer-box-el smaller">Facebook</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">YouTube</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">Instagram</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">LinkedIn</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">Twitter</a></dt>
+                        <dt class="dt-el"><a href="https://www.facebook.com/" class="footer-box-el smaller">Facebook</a></dt>
+                            <dt class="dt-el"><a href="https://www.youtube.com/" class="footer-box-el smaller">YouTube</a></dt>
+                            <dt class="dt-el"><a href="https://www.instagram.com/" class="footer-box-el smaller">Instagram</a></dt>
+                            <dt class="dt-el"><a href="https://www.linkedin.com/" class="footer-box-el smaller">LinkedIn</a></dt>
+                            <dt class="dt-el"><a href="https://twitter.com/" class="footer-box-el smaller">Twitter</a></dt>
                     </div>
 
                     <div class="col">
