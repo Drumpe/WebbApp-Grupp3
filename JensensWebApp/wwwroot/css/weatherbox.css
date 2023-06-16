@@ -1,0 +1,87 @@
+﻿.weather-card {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Batang'
+}
+
+.weather-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-input {
+    width: 100%;
+    margin: 10px auto;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid #636262;
+    
+}
+.search-btn {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+   
+    
+}
+.search-btn-img {
+    width: 25px;
+     
+    
+}
+.weather-main-icon{
+    width:80px;
+    
+}
+.details{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 50px;
+    margin-top: -5px;
+}
+.SecondDetails{
+    
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-between;
+    margin:  10px;
+    margin-top: -5px;
+    
+}
+
+.humidity, .wind{
+    width: 100%;
+    font-size: 15px;
+    margin-top: -15px;
+}
+.weather-desc{
+    margin-top: -2px;
+}
+.weather-city {
+    margin-top: -8px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.weather-temp {
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
