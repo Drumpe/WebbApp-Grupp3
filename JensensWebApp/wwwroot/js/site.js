@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 icon.src = "Images/moon-icon.png"
                 currentTheme = "light-theme";
             }
-
+            
             localStorage.setItem("theme", currentTheme);
         };
     }

@@ -141,3 +141,7 @@ a.dropdown-item[b-5u4fwv6eth] {
     margin-right: 1.5rem;
 }
 
+main.mainclass {
+    background-color: var(--primary-color);
+    padding-top: 1.5rem;
+}
