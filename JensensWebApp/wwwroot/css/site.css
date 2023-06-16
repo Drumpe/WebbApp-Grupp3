@@ -1,22 +1,44 @@
 html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 14px;
 }
 /*L�nkar*/
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #05091be1;
+}
+
+.dark-theme {
+    --primary-color: #05091be1;
+    --secondary-color: #fff;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Jag ser inte att detta gör någonting 
 a {
-    color: #343a40;
+    color: var(--secondary-color);
 }
 
     a:hover, a:active {
         color: #93cdcb;
-    }
-
+    } 
+*/
 .navbar-nav {
     text-align: left;
     font-family: 'Batang'
 }
 
 .navbar ul li :hover {
-    color: black;
+    color: var(--secondary-color);
     border-bottom: solid 2px #999;
 }
 
@@ -27,15 +49,16 @@ a {
 }
 
 .navbar-nav .nav-link {
-    color: #343a40;
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
+/* Detta gör ingenting 
 .nav-link:hover,
 .nav-link:focus {
-    color: #007bff;
-}
-
+    color: #150aa8;
+} 
+*/
 .navcontainer {
     justify-content: space-between;
     align-items: center;
@@ -68,21 +91,22 @@ a {
     z-index: 999;
     padding: 0;
     margin: 0;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 2px 4px var(--secondary-color);
 }
 
-.dropdown-item {
+a.dropdown-item[b-5u4fwv6eth] {
+    color: var(--secondary-color);
     padding: 0.5rem 1rem;
     clear: both;
     font-weight: 400;
-    color: black;
     text-decoration: none;
     white-space: nowrap;
 }
 
     .dropdown-item:hover {
-        background-color: ghostwhite;
+        background-color: rgb(170, 170, 209);
     }
 
 .dropdown:hover .dropdown-menu {
@@ -104,9 +128,16 @@ a {
     .login-box button {
         width: 100%;
         padding: 8px;
-        background-color:black;
-        color: white;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
         border: outset;
         cursor: pointer;
     }
+   
     
+.img-bg {
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+

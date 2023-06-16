@@ -1,4 +1,4 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
 // Globala variabler
@@ -43,6 +43,41 @@ function initSubmitButton() {
         document.getElementById('thankYouMessage').style.display = 'block';
     });
 }
+
+
+// Här är funktion som gör toggle mellan theme och kontrollerar den nuvarande theme.
+document.addEventListener("DOMContentLoaded", function() { 
+    var icon = document.getElementById("theme-icon");
+    var currentTheme = localStorage.getItem("theme") || "light-theme";
+    console.log(currentTheme);
+
+    if (currentTheme) {
+        document.body.classList.add(currentTheme);
+        if (currentTheme === "dark-theme") {
+                icon.src = "Images/sun-icon.png"
+        } else { 
+                icon.src = "Images/moon-icon.png"
+        }
+        
+    }
+
+    if (icon) {
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) { 
+                currentTheme = "dark-theme";
+                icon.src = "Images/sun-icon.png"
+            } else { 
+                icon.src = "Images/moon-icon.png"
+                currentTheme = "light-theme";
+            }
+
+            localStorage.setItem("theme", currentTheme);
+        };
+    }
+});
+
+
 
 const weatherInfoElement = document.getElementById('wind');
 const cityElement = document.getElementById('stad');
@@ -157,3 +192,4 @@ window.addEventListener('load', getLocation);
 
 // Laddar in väder vid sökning på plats
 searchWeatherByCity();
+

@@ -1,4 +1,4 @@
-﻿﻿.gradient-bg {
+.gradient-bg {
     background-image: var(--gradient);
     animation: bg-animation 15s infinite alternate;
     background-size: 400%
@@ -56,6 +56,10 @@
     color: rgb(124, 172, 204);
 }
 
+.mainclass {
+    background-color:var(--primary-color);
+    padding-top: 1.5rem;
+}
 
 .card-topic {
     color: rgb(124, 172, 204);
