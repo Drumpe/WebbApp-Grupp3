@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/StylingBody.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/JensensWebApp.styles.css" asp-append-version="true" />   
     <link rel="stylesheet" href="~/css/footerstyle.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/views.css" asp-append-version="true" />
 
     
 </head>
@@ -83,7 +84,7 @@
                 </div>
                 
 
-                <div class="img-bg"><img id="theme-icon" src="Images/moon-icon.png"></div>
+                <div class="img-bg"><img id="theme-icon" src="~/Images/moon-icon.png"></div>
         </nav>
     </header>
     <div>
@@ -92,7 +93,7 @@
         </main>
     </div>
 
-    <footer class="footer text-white">
+    <footer class="footer text-white ">
 
         <!--&copy; 2023 - JensensWebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>-->
 
@@ -173,7 +174,7 @@
                     <div class="footer-box col">
                         <dl class="dl">
                             <dt class="dt-el"><a href="#" class="footer-box-el smaller">Alla teman</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">Jobba hos oss</a></dt>
+                            <dt class="dt-el"><a asp-controller="Employment" asp-action="JobApplication" class="footer-box-el smaller">Jobba hos oss</a></dt>
                             <dt class="dt-el"><a href="#" class="footer-box-el smaller">Journalister</a></dt>
                             <dt class="dt-el"><a href="#" class="footer-box-el smaller">Arkiv</a></dt>
                             
@@ -182,11 +183,11 @@
                     </div>
 
                     <div class="footer-box col">
-                        <dt class="dt-el"><a href="#" class="footer-box-el smaller">Facebook</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">YouTube</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">Instagram</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">LinkedIn</a></dt>
-                            <dt class="dt-el"><a href="#" class="footer-box-el smaller">Twitter</a></dt>
+                        <dt class="dt-el"><a href="https://www.facebook.com/" class="footer-box-el smaller">Facebook</a></dt>
+                            <dt class="dt-el"><a href="https://www.youtube.com/" class="footer-box-el smaller">YouTube</a></dt>
+                            <dt class="dt-el"><a href="https://www.instagram.com/" class="footer-box-el smaller">Instagram</a></dt>
+                            <dt class="dt-el"><a href="https://www.linkedin.com/" class="footer-box-el smaller">LinkedIn</a></dt>
+                            <dt class="dt-el"><a href="https://twitter.com/" class="footer-box-el smaller">Twitter</a></dt>
                     </div>
 
                     <div class="col">

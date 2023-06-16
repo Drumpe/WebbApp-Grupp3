@@ -1,11 +1,16 @@
 html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 14px;
 }
 /*L�nkar*/
 
 :root {
     --primary-color: #ffffff;
-    --secondary-color: #000000;
+    --secondary-color: #05091be1;
 }
 
 .dark-theme {
@@ -135,3 +140,4 @@ a.dropdown-item[b-5u4fwv6eth] {
     border-radius: 50%;
     margin-right: 1.5rem;
 }
+
