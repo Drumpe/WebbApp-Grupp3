@@ -96,6 +96,8 @@ a {
     box-shadow: 0 2px 4px var(--secondary-color);
 }
 
+/* Rest of your existing styles */
+
 a.dropdown-item[b-5u4fwv6eth] {
     color: var(--secondary-color);
     padding: 0.5rem 1rem;
@@ -105,13 +107,14 @@ a.dropdown-item[b-5u4fwv6eth] {
     white-space: nowrap;
 }
 
-    .dropdown-item:hover {
+    a.dropdown-item[b-5u4fwv6eth]:hover,
+    a.dropdown-item[b-5u4fwv6eth]:focus {
+        text-decoration: none;
         background-color: rgb(170, 170, 209);
     }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
+/* Rest of your existing styles */
+
 .login-box {
     width: 300px;
     margin: 0 auto;
